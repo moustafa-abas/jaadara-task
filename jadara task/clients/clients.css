@@ -1,0 +1,72 @@
+.clients main {
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+gap: 30px;
+padding: 100px 0;
+position: relative;
+}
+.clients section {
+width: 100%;
+border-radius: 10px;
+border: 1px solid #ebe3ff;
+box-shadow: 0px 7px 4px 0px rgba(183, 183, 183, 0.15);
+padding: 30px;
+position: relative;
+}
+.clients section svg {
+width: 30px;
+height: 30px;
+}
+
+.clients section p {
+color: #828282;
+text-align: right;
+font-size: 20px;
+font-weight: 400;
+}
+.clients section h1 {
+color: #1e1e1e;
+text-align: right;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 55px; /* 196.429% */
+text-align: center;
+margin-top: 20px;
+}
+
+.clients section svg:nth-last-of-type(1) {
+width: 50px;
+height: 50px;
+position: absolute;
+bottom: -15px;
+right: -15px;
+}
+
+.clients section svg:nth-of-type(2) {
+width: 100%;
+margin-top: 20px;
+}
+.clients aside {
+width: 100%;
+}
+.clients aside svg {
+position: absolute;
+top: 0;
+left: 0;
+}
+.clients aside img {
+width: 100%;
+}
+@media (width>=768px) {
+.clients main {
+flex-direction: row;
+}
+.clients section {
+width: 70%;
+}
+.clients aside {
+width: 30%;
+}
+}

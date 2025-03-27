@@ -1,0 +1,68 @@
+.download {
+position: relative;
+}
+.download svg {
+width: 100%;
+}
+.download svg:nth-of-type(1) {
+position: absolute;
+top: 0;
+}
+.download svg:nth-of-type(2) {
+position: absolute;
+top: 190px;
+}
+.download .main {
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 2;
+position: relative;
+}
+.download .main section {
+width: 60%;
+padding-top: 10%;
+color: #fff;
+}
+.download .main aside {
+width: 40%;
+}
+.download section h1 {
+font-size: 54px;
+font-weight: 600;
+}
+.download section p {
+text-align: right;
+font-size: 28px;
+font-weight: 500;
+}
+
+.download aside img {
+width: 100%;
+}
+@media (width<=768px) {
+.download svg {
+display: none;
+}
+.download .main {
+flex-direction: column-reverse;
+}
+.download .main section {
+color: black;
+}
+.download .main section,
+.download .main aside {
+width: 100%;
+}
+.download section h1 {
+font-size: 28px;
+font-weight: 600;
+}
+.download section p {
+color: gray;
+font-size: 20px;
+}
+.download button {
+border: 1px solid gray;
+}
+}

@@ -1,0 +1,79 @@
+* {
+direction: rtl;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+@font-face {
+font-family: "somar";
+src: url("./font/alfont_com_SomarGX.ttf") format("truetype");
+}
+body {
+font-family: "somar";
+}
+html {
+scroll-behavior: smooth;
+}
+:root {
+--main-color: #512ea6;
+--second-color: #feb200;
+}
+.container {
+width: 300px;
+margin: auto;
+}
+@media (width>=768px) {
+.container {
+width: 90%;
+}
+}
+.heading {
+text-align: center;
+}
+.heading p {
+color: var(--second-color, #feb200);
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px; /* 133.333% */
+margin-top: 15px;
+}
+.heading h1 {
+color: var(--main-color, #512ea6);
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+position: relative;
+width: fit-content;
+margin: auto;
+}
+.h-heading svg {
+position: absolute;
+right: -30px;
+}
+.buttons button {
+border: none;
+border-radius: 10px;
+margin: 40px 10px;
+cursor: pointer;
+}
+@media (width<=768px) {
+.buttons button {
+margin: 10px 10px;
+}
+}
+#features,
+#clients,
+#contact,
+#about {
+margin: 150px 0;
+}
+
+@media (width<=768px) {
+#features,
+#clients,
+#contact {
+margin: 50px 0;
+}
+}
